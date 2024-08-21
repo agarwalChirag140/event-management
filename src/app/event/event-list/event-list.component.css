@@ -1,0 +1,195 @@
+/* Container for event cards and header */
+.event-list-container {
+  padding: 16px;
+}
+
+/* Header section styling */
+.header-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.page-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.create-event-button {
+  display: flex;
+  align-items: center;
+}
+
+.create-event-button mat-icon {
+  margin-right: 8px;
+}
+
+/* Flex container for cards */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px; /* Space between cards */
+}
+
+/* Event card styles */
+.event-card {
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  flex: 1 1 calc(33.333% - 16px); /* Adjust card width and spacing */
+  max-width: calc(33.333% - 16px); /* Ensure cards do not exceed the width */
+  margin-bottom: 16px;
+}
+
+.event-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.mat-card-header {
+  background-color: #673ab7; /* Primary color */
+  color: white;
+  padding: 16px;
+}
+
+.mat-card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.mat-card-subtitle {
+  font-size: 1rem;
+  margin: 0;
+  opacity: 0.8;
+}
+
+.mat-card-content {
+  padding: 16px;
+  color: #333;
+}
+
+.mat-card-content p {
+  margin: 0;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* Container for action buttons */
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+
+.action-button {
+  flex: 1; /* Grow to fit available space */
+  margin: 0 8px; /* Space between buttons */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.edit-button {
+  /* background-color: #007bff; */
+  color: white;
+}
+
+.delete-button {
+  /* background-color: #dc3545; */
+  color: white;
+}
+
+/* Responsive design adjustments */
+
+/* Small devices (mobile phones) */
+@media (max-width: 576px) {
+  .event-card {
+    flex: 1 1 100%; /* Full width on small screens */
+    max-width: 100%;
+  }
+
+  .button-container {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .action-button {
+    width: 100%;
+  }
+}
+
+/* Medium devices (tablets) */
+@media (min-width: 577px) and (max-width: 768px) {
+  .event-card {
+    flex: 1 1 calc(50% - 16px); /* Two cards per row */
+  }
+}
+
+/* Large devices (desktops) */
+@media (min-width: 769px) {
+  .event-card {
+    flex: 1 1 calc(33.333% - 16px); /* Three cards per row */
+  }
+}
+
+.header-section {
+  display: flex; /* Use flexbox layout */
+  justify-content: flex-end; /* Align children (button) to the end of the container */
+  align-items: center; /* Center items vertically */
+  padding: 16px; /* Optional padding for spacing */
+}
+
+.create-event-button {
+  margin-left: 16px; /* Optional: margin to add space from the edge or other elements */
+}
+
+.event-list-container {
+  padding: 20px;
+}
+
+.header-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.event-card {
+  width: 100%;
+  max-width: 400px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.event-card:hover {
+  transform: scale(1.05);
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.action-button {
+  min-width: 80px;
+}
+
+.pointer-cursor {
+  cursor: pointer;
+}
+
+
+
+
+  

@@ -1,0 +1,118 @@
+.event-card {
+  max-width: 600px;
+  margin: 30px auto; /* Slightly reduced margin */
+  padding: 15px; /* Reduced padding */
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  background-color: #fafafa;
+  transition: transform 0.3s ease-in-out;
+  height: 500px;
+}
+
+.event-card:hover {
+  transform: translateY(-5px);
+}
+
+.event-card-title {
+  font-size: 22px; /* Slightly reduced font size */
+  font-weight: bold;
+  text-align: center;
+  color: #3f51b5;
+}
+
+.event-form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px; /* Reduced gap between form fields */
+}
+
+mat-form-field {
+  width: 100%;
+  border-radius: 8px;
+}
+
+mat-form-field .mat-form-field-appearance-fill .mat-form-field-flex {
+  background-color: #ffffff;
+  border-radius: 8px;
+}
+
+textarea {
+  resize: vertical;
+  height: 80px; /* Reduced height of the textarea */
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px; /* Reduced gap between buttons */
+}
+
+.form-actions button {
+  min-width: 100px; /* Slightly reduced button width */
+  font-size: 15px; /* Slightly reduced font size */
+}
+
+button[mat-raised-button] {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease;
+}
+
+button[mat-raised-button]:hover {
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive adjustments for tablet screens */
+@media (max-width: 768px) {
+  .event-card {
+      padding: 12px; /* Reduced padding for tablets */
+  }
+
+  .event-card-title {
+      font-size: 20px; /* Smaller font size on tablets */
+  }
+
+  .event-form {
+      gap: 12px; /* Decrease gap between form fields on tablets */
+  }
+
+  textarea {
+      height: 70px; /* Decrease height of textarea on tablets */
+  }
+
+  .form-actions button {
+      font-size: 14px; /* Smaller button font size on tablets */
+  }
+}
+
+/* Responsive adjustments for mobile screens */
+@media (max-width: 480px) {
+  .event-card {
+      padding: 10px; /* Further reduced padding for mobile */
+      margin: 20px auto; /* Reduce margin on mobile */
+  }
+
+  .event-card-title {
+      font-size: 18px; /* Smaller font size on mobile */
+  }
+
+  .event-form {
+      gap: 10px; /* Decrease gap between form fields on mobile */
+  }
+
+  mat-form-field .mat-form-field-appearance-fill .mat-form-field-flex {
+      border-radius: 6px; /* Smaller border radius on mobile */
+  }
+
+  textarea {
+      height: 60px; /* Further reduced height of textarea on mobile */
+  }
+
+  .form-actions button {
+      font-size: 13px; /* Smaller button font size on mobile */
+  }
+}
+
+  
+  
+  
+  

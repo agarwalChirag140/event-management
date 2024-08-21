@@ -1,0 +1,35 @@
+<div class="register-container">
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title class="primary-text">Create Account</mat-card-title>
+        <mat-card-subtitle>Join us today!</mat-card-subtitle>
+      </mat-card-header>
+      <form [formGroup]="registerForm" (ngSubmit)="onRegister()">
+        <mat-form-field appearance="fill">
+            <mat-label>Name</mat-label>
+            <input matInput formControlName="name" type="text" />
+            <mat-error *ngIf="registerForm.get('name').hasError('required')">Name is required.</mat-error>
+          </mat-form-field>
+        <mat-form-field appearance="fill">
+          <mat-label>Email</mat-label>
+          <input matInput formControlName="email" type="email" />
+          <mat-error *ngIf="registerForm.get('email').hasError('required')">Email is required.</mat-error>
+          <mat-error *ngIf="registerForm.get('email').hasError('email')">Invalid email format.</mat-error>
+        </mat-form-field>
+  
+        <mat-form-field appearance="fill">
+          <mat-label>Password</mat-label>
+          <input matInput formControlName="password" type="password" />
+          <mat-error *ngIf="registerForm.get('password').hasError('required')">Password is required.</mat-error>
+        </mat-form-field>
+  
+        <button mat-raised-button color="primary" type="submit" class="custom-button pointer-cursor">
+          Register
+        </button>
+      </form>
+      <mat-card-actions>
+        <button mat-button routerLink="/auth/login" class="accent-text pointer-cursor" (click)="moveToLogin()">Already have an account?</button>
+      </mat-card-actions>
+    </mat-card>
+</div>
+  

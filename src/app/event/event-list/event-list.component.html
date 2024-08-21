@@ -1,0 +1,30 @@
+<div class="event-list-container">
+  <!-- Header section with title and button -->
+  <div class="header-section">
+    <button style="margin-left: auto;" mat-raised-button color="primary" (click)="openCreateEventDialog()" class="create-event-button pointer-cursor">
+      <mat-icon>add</mat-icon> Create Event
+    </button>
+  </div>
+
+  <!-- List of events in a flex container -->
+  <div class="card-container">
+    <mat-card *ngFor="let event of events" class="event-card" (click)="viewEventDetails(event)">
+      <mat-card-header>
+        <mat-card-title>{{ event.title }}</mat-card-title>
+        <mat-card-subtitle>{{ event.date }} | {{ event.location }}</mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+        <p>{{ event.description | slice:0:100 }}...</p>
+        <div class="button-container">
+          <button mat-raised-button color="primary" (click)="getEvent(event.id); $event.stopPropagation();" class="action-button edit-button pointer-cursor">
+            <mat-icon>edit</mat-icon> Edit
+          </button>
+          <button mat-raised-button color="warn" (click)="deleteEvent(event.id); $event.stopPropagation();" class="action-button delete-button pointer-cursor">
+            <mat-icon>delete</mat-icon> Delete
+          </button>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>
+

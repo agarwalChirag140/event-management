@@ -1,0 +1,51 @@
+<mat-card class="event-card">
+    <mat-card-header>
+      <mat-card-title class="event-card-title">{{data.hasOwnProperty('id') ? 'Update Event' : 'Create Event'}}</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <form [formGroup]="eventForm" class="event-form">
+        <!-- First Row: Title and Date -->
+        <div fxLayout="row" fxLayoutGap="16px">
+          <mat-form-field appearance="fill" fxFlex>
+            <mat-label>Title</mat-label>
+            <input matInput formControlName="title">
+          </mat-form-field>
+          
+          <mat-form-field appearance="fill" fxFlex>
+            <mat-label>Location</mat-label>
+            <input matInput formControlName="location">
+          </mat-form-field>
+
+        </div>
+
+        <!-- Second Row: Location -->
+        <div fxLayout="row" fxLayoutGap="16px">
+
+            <mat-form-field appearance="fill" fxFlex>
+                <mat-label>Choose a date</mat-label>
+                <input matInput [matDatepicker]="picker" formControlName="date">
+                <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker #picker></mat-datepicker>
+            </mat-form-field>
+            
+          </div>
+  
+        <!-- Third Row: Description -->
+        <div fxLayout="row" fxLayoutGap="16px">
+          <mat-form-field appearance="fill" fxFlex>
+            <mat-label>Description</mat-label>
+            <textarea matInput formControlName="description" rows="4"></textarea>
+          </mat-form-field>
+          
+        </div>
+    
+        <!-- Action Buttons -->
+        <div class="form-actions" fxLayout="row" fxLayoutAlign="end center" fxLayoutGap="8px">
+          <button mat-stroked-button color="warn" (click)="onCancel()">Cancel</button>
+          <button mat-raised-button color="primary" type="button" (click)="onSubmit()">{{data.hasOwnProperty('id') ? 'Update' : 'Create'}}</button>
+        </div>
+      </form>
+    </mat-card-content>
+  </mat-card>
+  
+  

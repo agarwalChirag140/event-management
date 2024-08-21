@@ -1,0 +1,90 @@
+/*  */
+/* Style the toolbar */
+.toolbar {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  height: 64px;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  background-color: #3f51b5;
+  justify-content: space-between;
+  position: relative;
+  z-index: 1; /* Ensure toolbar stays on top */
+}
+
+/* Style the application title */
+.app-title {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #ffffff;
+  margin-right: auto;
+}
+
+/* Ensure space between elements */
+.spacer {
+  flex: 1;
+}
+
+/* Style the navigation buttons */
+.nav-button {
+  display: flex;
+  align-items: center;
+  color: #009688; /* Teal color for text */
+  font-size: 1rem;
+  margin-left: 16px;
+  transition: background-color 0.3s, transform 0.3s;
+  cursor: pointer;
+  padding: 8px 16px;
+}
+
+/* Style icons within buttons */
+.nav-button mat-icon {
+  margin-right: 8px;
+}
+
+/* Responsive styles for tablets and smaller screens */
+@media (max-width: 1024px) {
+  .toolbar {
+    padding: 0 16px;
+  }
+  
+  .app-title {
+    font-size: 1.25rem;
+  }
+
+  .nav-button {
+    font-size: 0.9rem;
+  }
+}
+
+/* Responsive styles for mobile screens */
+@media (max-width: 600px) {
+  .toolbar {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    padding: 16px; /* Additional padding for better spacing */
+  }
+  
+  .spacer {
+    display: none;
+  }
+  
+  .app-title {
+    font-size: 1.125rem;
+    margin-bottom: 8px;
+  }
+
+  .nav-button {
+    font-size: 0.875rem;
+    margin-left: 0;
+    width: 30%;
+    justify-content: center; /* Align text to the start for better readability */
+    text-align: left; /* Align text within the button */
+    padding: 8px 0;
+  }
+}
+
+  
+  
+  

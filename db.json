@@ -1,0 +1,32 @@
+{
+  "events": [
+    {
+      "id": "1",
+      "title": "Angular Workshop",
+      "description": "Learn the basics of Angular in this hands-on workshop.",
+      "date": "2024-08-30",
+      "location": "New York"
+    },
+    {
+      "title": "New Updated",
+      "description": "New Description",
+      "location": "New",
+      "date": "2024-08-19",
+      "id": "71548fa7-8334-4ffe-98d8-9271c31ff96d"
+    },
+    {
+      "id": "904de8b5-caad-44aa-a0c1-b14afe907970",
+      "title": "New Event Created",
+      "description": "This Event Conducted in Agra",
+      "location": "Agra",
+      "date": "2024-08-21"
+    },
+    {
+      "title": "Test Updated",
+      "description": "test updated",
+      "location": "test",
+      "date": "2024-08-20",
+      "id": "8be77ad8-440c-4a9a-8f73-0675d4b310fa"
+    }
+  ]
+}
