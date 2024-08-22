@@ -2,10 +2,15 @@
 
 This project is an **Event Management Application** developed using Angular and Angular Material. The application provides features for creating, viewing, editing, and deleting events, with data persistence handled by a mock JSON server. The application is fully responsive, offering an optimal experience across devices of different screen sizes, including mobile, tablet, laptop, and desktop.
 
-## Development server
+## Project Overview
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+The Event Management Application allows users to manage events efficiently. The key features include:
 
+- **Event Creation:** Users can create new events with details such as title, date, location, and description.
+- **Event Viewing:** Events are displayed in a card format, showing essential details.
+- **Event Editing:** Users can update existing events.
+- **Event Deletion:** Users can delete events, with data persisted across sessions.
+- **Responsive Design:** The application adjusts its layout for mobile, tablet, and desktop screens.
 ## Code scaffolding
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
