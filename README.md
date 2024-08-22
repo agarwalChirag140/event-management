@@ -1,6 +1,6 @@
 # EventManagement
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.0.
+This project is an **Event Management Application** developed using Angular and Angular Material. The application provides features for creating, viewing, editing, and deleting events, with data persistence handled by a mock JSON server. The application is fully responsive, offering an optimal experience across devices of different screen sizes, including mobile, tablet, laptop, and desktop.
 
 ## Development server
 
