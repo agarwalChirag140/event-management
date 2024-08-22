@@ -27,9 +27,9 @@ The Event Management Application allows users to manage events efficiently. The 
 
 Ensure you have the following installed:
 
-- **Node.js** (v12 or higher)
-- **npm** (v6 or higher)
-- **Angular CLI** (v12 or higher)
+- **Node.js** :- 22.6.0
+- **npm** :- 10.8.2
+- **Angular CLI** :- 18.2.0
 
 ### Installation Steps
 
