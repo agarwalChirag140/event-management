@@ -33,10 +33,7 @@ Ensure you have the following installed:
 
 ### Installation Steps
 
-**Clone the repository:**
-   git clone https://github.com/your-username/event-management-app.git
-**Installing the dependency**
-  npm Install
-**Start The angular project and JSON Server Concurrently both**
-npm run start:all
+- **Clone the repository** :- git clone https://github.com/your-username/event-management-app.git
+- **Installing the dependency** :- npm Install
+- **Start The angular project and JSON Server Concurrently both** :- npm run start:all
 
